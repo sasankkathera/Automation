@@ -9,7 +9,7 @@ then
         apt install openjdk-11-dbg
         apt install maven
  else
-  if [ -d  yum ];
+  if [ -d  /etc/yum ];
 then 
         yum install java -y
         
