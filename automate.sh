@@ -7,6 +7,11 @@ else
   if [ -f  /etc/debian_version ];
 then 
         apt install openjdk-11-dbg
+        else
+  if [ -d  yum ];
+then 
+        yum install java -y
+fi
 fi
 fi
 
