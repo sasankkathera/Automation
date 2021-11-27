@@ -37,3 +37,7 @@ cd myweb
 mvn clean package
 
 mv target/*.war ../apache-tomcat-9.0.55/webapps/website.war
+
+wget https://get.jenkins.io/war-stable/2.303.3/jenkins.war
+
+mv jenkins.war ../apache-tomcat-9.0.55/webapps/Jenkins.war
