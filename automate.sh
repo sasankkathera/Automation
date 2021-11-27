@@ -7,10 +7,13 @@ else
   if [ -f  /etc/debian_version ];
 then 
         apt install openjdk-11-dbg
-        else
+        apt install maven
+ else
   if [ -d  yum ];
 then 
         yum install java -y
+        
+        yum install maven
 fi
 fi
 fi
@@ -26,3 +29,11 @@ cp context.xml apache-tomcat-9.0.55/webapps/manager/META-INF/context.xml
 cp tomcat-users.xml apache-tomcat-9.0.55/conf/tomcat-users.xml
 
 apache-tomcat-9.0.55/bin/startup.sh
+
+git clone https://github.com/sasankkathera/myweb.git
+
+cd myweb
+
+mvn clean package
+
+mv target/*.war ../apache-tomcat-9.0.55/webapps/website.war
