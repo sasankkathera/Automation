@@ -13,7 +13,7 @@ then
 then 
         yum install java -y
         
-        yum install maven
+        yum install maven -y 
 fi
 fi
 fi
