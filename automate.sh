@@ -6,6 +6,7 @@ then
 else
   if [ -f  /etc/debian_version ];
 then 
+        apt-get update
         apt install openjdk-11-dbg
         apt install maven
  else
