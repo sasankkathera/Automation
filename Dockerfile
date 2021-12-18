@@ -1,0 +1,4 @@
+FROM ubuntu:18.04
+ENV DEBIAN_FRONTEND=noninteractive
+EXPOSE 80
+CMD apache2ctl -D FOREGROUND
