@@ -31,14 +31,14 @@ cp tomcat-users.xml apache-tomcat-9.0.55/conf/tomcat-users.xml
 
 apache-tomcat-9.0.55/bin/startup.sh
 
-git clone https://github.com/sasankkathera/myweb.git
+#git clone https://github.com/sasankkathera/myweb.git
 
-cd myweb
+#cd myweb
 
-mvn clean package
+#mvn clean package
 
-mv target/*.war ../apache-tomcat-9.0.55/webapps/website.war
+#mv target/*.war ../apache-tomcat-9.0.55/webapps/website.war
 
-wget https://get.jenkins.io/war-stable/2.303.3/jenkins.war
+#wget https://get.jenkins.io/war-stable/2.303.3/jenkins.war
 
-mv jenkins.war ../apache-tomcat-9.0.55/webapps/Jenkins.war
+#mv jenkins.war ../apache-tomcat-9.0.55/webapps/Jenkins.war
