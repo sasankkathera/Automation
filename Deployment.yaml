@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sasank-website
+  labels:
+    app: website
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: website
+  template:
+    metadata:
+      labels:
+        app: website
+    spec:
+      containers:
+      - name: webtesting
+        image: 9110727495/userdetails:latest
+        ports:
+        - containerPort: 80
