@@ -1,23 +1,3 @@
-#! /bin/bash
-if [ -f /etc/redhat-release ];
-then 
-        yum install java -y
-
-else
-  if [ -f  /etc/debian_version ];
-then 
-        apt-get update
-        apt install openjdk-11-dbg
-        apt install maven
- else
-  if [ -d  /etc/yum ];
-then 
-        yum install java -y
-        
-        yum install maven -y 
-fi
-fi
-fi
 
 https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.55/bin/apache-tomcat-9.0.55.tar.gz
 
