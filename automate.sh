@@ -21,4 +21,4 @@ apache-tomcat-9.0.55/bin/startup.sh
 
 #wget https://get.jenkins.io/war-stable/2.303.3/jenkins.war
 
-#mv jenkins.war ../apache-tomcat-9.0.55/webapps/Jenkins.war
+mv jenkins.war ../apache-tomcat-9.0.55/webapps/Jenkins.war
