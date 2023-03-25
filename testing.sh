@@ -18,7 +18,7 @@ fi
 fi
 fi
 
-wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.55/bin/apache-tomcat-9.0.55.tar.gz
+wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.55/bin/apache-tomcat-9.0.55.tar.gz
 
 tar -xvf apache-tomcat-9.0.55.tar.gz
 
