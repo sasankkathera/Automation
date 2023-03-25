@@ -22,7 +22,7 @@ wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.55/bin/apache-tomcat-9.0.55.t
 
 tar -xvf apache-tomcat-9.0.55.tar.gz
 
-
+cp server.xml apache-tomcat-9.0.55/conf/server.xml
 
 cp context.xml apache-tomcat-9.0.55/webapps/manager/META-INF/context.xml
 
